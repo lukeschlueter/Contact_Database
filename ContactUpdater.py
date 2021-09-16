@@ -1,12 +1,9 @@
-import contacts
+import pyodbc
 
-print('Address Book Notes')
-print('=' * 40)
-people = contacts.get_all_people()
-for p in people:
-    note = p.note
-    if note:
-        print(p.full_name)
-        print('-' * 40)
-        print(note)
-        print('=' * 40)
+conn = pyodbc.connect('Driver={SQL Server};'
+                      'Server=/tmp/mysql.sock;'
+                      'Database=contacts;'
+                      'Trusted_Connection=yes;')
+
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM contacts')
