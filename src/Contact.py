@@ -1,6 +1,6 @@
-
+'''
+'''
 from validate_email import validate_email
-is_valid = validate_email('example@example.com')
 
 '''
 Created Sept 17, 2021
