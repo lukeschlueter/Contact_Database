@@ -12,4 +12,5 @@ ReactDOM.render(
             <li>GERMAN CLUB</li>
         </ul>
     </div>,
-    document.getElementById("root"));
+    document.getElementById("root")
+);
