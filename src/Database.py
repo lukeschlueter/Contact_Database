@@ -1,6 +1,12 @@
 
 import mysql.connector
 
+'''
+Created Sept 17, 2021
+
+@author Luke Schlueter
+'''
+
 
 class Database():
 
